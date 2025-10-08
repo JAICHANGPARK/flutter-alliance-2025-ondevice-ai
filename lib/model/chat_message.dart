@@ -3,11 +3,13 @@ class ChatMessage {
   final String? imagePath;
   final bool isUser;
   final DateTime timestamp;
+  final double? tokensPerSecond;
 
   ChatMessage({
     required this.text,
     this.imagePath,
     required this.isUser,
     required this.timestamp,
+    this.tokensPerSecond,
   });
 }
